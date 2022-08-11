@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 :root{
     font-size: 15px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: wheat;
+    color: white;
 }
 
 body{
@@ -20,6 +21,12 @@ body{
     justify-content: center;
 }
 
+sub{
+    position: relative;
+    font-size: 15px;
+    top: -3px;
+}
+
 .container{
     display: flex;
 }
@@ -29,6 +36,10 @@ body{
     display: inline-block;
     background: white;
 }*/
+
+.bold{
+    font-weight: 700;
+}
 
 .left{
     height: 100px;
@@ -56,19 +67,25 @@ body{
     border-radius: 25%;
 }
 
-.right{
-    border: 1px solid black;
-    padding: 20px;
-    background-color: hsl(228, 56%, 26%);
-    border-radius: 10px;
-    width: 500px;
+.fixxx img{
+    margin: 2px auto;
 }
 
+.right{
+    padding: 20px;
+    padding-left: 40px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    width: 450px;
+}
+
+
 .right p{
-    width: 80%;
+    display: inline-block;
+    width: 60%;
 }
 .progress-bar{
-    width: 80%;
+    width: 90%;
 }
 .progress-bar progress{
     width: 100%;
@@ -85,7 +102,8 @@ progress::-webkit-progress-value{
     background: linear-gradient(-45deg,#e66465, #9198e5);
 }
 progress::-webkit-progress-bar {
-    background-color: black;
+    background-color: hsl(229, 57%, 11%);
+    border: 1px solid hsl(229, 57%, 11%);
   }
 
 .fix{
@@ -96,8 +114,67 @@ progress::-webkit-progress-bar {
 #bob{
     margin-top: 5px;
     display: inline-block;
-    margin-left: 300px;
+    margin-left: 310px;
   }
 #obo{
     display: inline-block;
+}
+
+.poppins{
+    display: inline-block;
+}
+
+.ram{
+    position: relative;
+    scale: 8 5;
+    transform: rotateY(-180deg);
+    left: 90px;
+    top: -40px
+}
+.poppins span{
+    position: relative;
+    left: 40px;
+    top: -48px;
+    font-weight: 700;
+    font-size: 16px;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+@media (max-width:500px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin: auto;
+        gap: 15px;
+    }
+
+    body{
+        background: url("images/bg-mobile.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left,.right{
+        width: 100%;
+        height: fit-content;
+    }
+    .right{
+        width: 80%;
+    }
+    .right p{
+        width: 100%;
+        text-align: center;
+    }
+    .poppins span{
+        top:100px;
+        left: 100px;
+        border-radius: 10px;
+    }
 }
