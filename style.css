@@ -105,15 +105,14 @@ progress::-webkit-progress-bar {
     background-color: hsl(229, 57%, 11%);
     border: 1px solid hsl(229, 57%, 11%);
   }
-
-progress::-moz-progress-bar {
-    background-color: hsl(229, 57%, 11%);
-    border: 1px solid hsl(229, 57%, 11%);
-  }
 progress::-moz-progress-value{
     border-radius: 15px;
     background: linear-gradient(-45deg,#e66465, #9198e5);
 }
+progress::-moz-progress-bar {
+    background: linear-gradient(-45deg,#e66465, #9198e5);
+  }
+
 .fix{
     display: flex;
     justify-content: space-between;
